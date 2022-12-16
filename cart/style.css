@@ -1,0 +1,1321 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.navbar
+{   
+    position: sticky;
+    top:0;
+    left:0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#212529;
+    z-index: 9999;
+}
+
+.container
+{   
+    min-height: 100vh;
+    max-width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.items
+{   
+    min-height: 180px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-heading
+{   
+    font-size: 14px;
+    cursor: default;
+    color: #222;
+    margin-top: 1rem;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 90%;
+    table-layout: fixed;
+}
+
+.img-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.img-container img
+{
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+}
+
+.img-container .title
+{
+    color: #222;
+    font-weight: 600;
+    cursor: default;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+th
+{
+    background-color: #222;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #222;
+    cursor: default;
+    font-size: 1.4rem;
+}
+
+td
+{
+    padding: 10px;
+}
+
+.product-img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price
+{   
+    position: relative;
+    font-weight: 600;
+    margin: 0 auto;
+    color: #222;
+    font-size: 20px;
+}
+
+tr
+{   
+    text-align: center;
+    border: 2px solid #222;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.text-center
+{   
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 13rem auto;
+}
+
+.homeBtn
+{
+    padding: 10px 20px;
+    background-color: #ff523b;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.quantity
+{
+    color: #222;
+}
+
+.close
+{  
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    font-size: 1.6rem;
+    right: 15px;    
+    top:42%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* cart items */
+
+.cart-memo
+{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.memo
+{
+    height: 400px;
+    width: 500px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.memo-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(241, 241, 241);
+    padding: 30px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-family: Roboto, Oxygen, sans-serif;
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-input input
+{
+    height: 35px;
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.coupon-button
+{
+    height: 35px;
+    width: 90px;
+    cursor: pointer;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    border:none;
+    font-size: 1.1rem;
+}
+
+.memo-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.memo-btn .pay-now 
+{
+    padding: 10px 15px;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.memo-btn .clear
+{
+    padding: 15px 25px;
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.checkout
+{
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.pay-now:hover
+{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.clear:hover
+{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+
+
+@media screen and (max-width: 1440px){
+
+    
+.cart-memo
+{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.memo
+{
+    max-height: 420px;
+    max-width: 540px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+    gap:3rem;
+}
+
+.memo-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 300px;
+    max-width: 530px;
+    background-color: rgb(241, 241, 241);
+    padding: 30px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-input input
+{
+    max-height: 50px;
+    max-width: 300px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.coupon-button
+{
+    max-height: 50px;
+    max-width: 140px;
+    cursor: pointer;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    border:none;
+    font-size: 1.1rem;
+}
+
+.memo-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.memo-btn .pay-now 
+{
+    padding: 25px 35px;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.memo-btn .clear
+{
+    padding: 25px 35px;
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.checkout
+{
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+
+    .main-heading
+    {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 300px;
+    max-width: 530px;
+    background-color: rgb(241, 241, 241);
+    padding: 30px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input input
+{
+    max-height: 50px;
+    max-width: 300px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.coupon-button
+{
+    font-weight: 600;
+}
+
+.memo-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.memo-btn .pay-now 
+{
+    padding: 13px 15px;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.memo-btn .clear
+{
+    padding: 13px 15px;
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.checkout
+{
+    padding: 13px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+
+    .main-heading
+    {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .nav-logo .nav-title
+    {
+        font-size: 1.5rem;
+    }
+
+    th
+    {
+        font-size: 15px;
+    }
+
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 150px;
+    max-width: 290px;
+    background-color: rgb(241, 241, 241);
+    padding: 30px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input input
+{
+    max-height: 28px;
+    max-width: 150px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.coupon-button
+{
+    max-height: 28px;
+    max-width: 140px;
+    cursor: pointer;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    border:none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.memo
+{
+    max-height: 270px;
+    max-width: 350px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.memo-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.memo-btn .pay-now 
+{
+    padding: 10px 12px;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+}
+
+.memo-btn .clear
+{
+    padding: 10px 12px;
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+}
+
+.checkout
+{
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+
+    
+    .nav-logo .nav-title
+    {
+        font-size: 1.5rem;
+    }
+
+
+.nav-menu 
+{   
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    transition: all 0.5s ease-in;
+    background-color: #222;
+}
+
+.nav-menu ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.nav-menu.active 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    right:0%;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: top 0.5s ease;
+}
+
+.nav-menu ul li
+{
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-menu ul li a
+{
+    text-decoration: none;
+    margin: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart
+{
+    position: relative;
+    left: 50px;
+    bottom: 2px;
+    margin:0;
+}
+
+.hamburger
+{   
+    position: relative;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger-icon
+{   
+    width: 15px;
+    height: 2px;
+    background : #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after
+{   
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger-icon::before
+{
+    transform: translateY(-10px);
+}
+
+.hamburger-icon::after
+{
+    transform: translateY(10px);
+}
+
+.hamburger.open .hamburger-icon
+{   
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.hamburger.open .hamburger-icon::before
+{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.hamburger.open .hamburger-icon::after
+{
+    transform : rotate(-45deg) translate(35px, 35px);
+}
+
+
+    .counter
+    {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .counter .quantity
+    {   
+        font-size: 18px;
+        width: 2px;
+        padding: 2px;
+        position: relative;
+        right: 4px;
+    }
+
+    .counter i::before
+    {
+        height: 3px;
+        width: 6px;
+    }
+
+    .close
+    {
+        font-size: 1.4rem;
+        position: relative;
+        left: 10px;
+    }
+
+    .img-container img
+    {   
+        height: 100px;
+        width: 100px;
+    }
+
+    .img-container .title
+    {
+        font-size: 12px;
+    }
+    
+
+    
+.cart-memo
+{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-top: 4rem;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.memo
+{
+    max-height: 230px;
+    max-width: 380px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:2rem;
+}
+
+.memo-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    max-height: 130px;
+    max-width: 310px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-size: 1.2rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-input input
+{
+    max-height: 30px;
+    max-width: 180px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.coupon-button
+{
+    max-height: 30px;
+    max-width: 140px;
+    cursor: pointer;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    border:none;
+    font-size: 13px;
+}
+
+.memo-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.memo-btn .pay-now 
+{
+    padding: 8px 15px;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.memo-btn .clear
+{
+    padding: 8px 15px;
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.checkout
+{
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+.nav-menu.active 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    right:0%;
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: top 0.5s ease;
+}
+    .counter
+    {   
+        font-size: 10px;
+    }
+
+    .counter .quantity
+    {   
+        font-size: 16px;
+        width: 2px;
+        padding: 2px;
+        position: relative;
+        right: 4px;
+    }
+
+    .counter i::before
+    {   
+        height: 3px;
+        width: 6px;
+    }
+
+    .close
+    {
+        font-size: 1rem;
+        position: relative;
+        left: 10px;
+    }
+
+    .img-container img
+    {   
+        height: 80px;
+        width: 80px;
+    }
+
+    .price
+    {
+        font-size: 15px;
+    }
+
+    .img-container .title
+    {
+        font-size: 12px;
+    }
+
+.cart-memo
+{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-top: 4rem;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.memo
+{
+    max-height: 240px;
+    max-width: 340px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:2rem;
+}
+
+.memo-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    max-height: 130px;
+    max-width: 340px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-size: 1rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-input input
+{
+    max-height: 30px;
+    max-width: 180px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.coupon-button
+{
+    max-height: 30px;
+    max-width: 140px;
+    cursor: pointer;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    border:none;
+    font-size: 13px;
+}
+
+.memo-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.memo-btn .pay-now 
+{
+    padding: 8px 15px;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.memo-btn .clear
+{
+    padding: 8px 15px;
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.checkout
+{
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+    .total-items, .total-price
+    {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .memo-btn
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+    }
+
+    .pay-now
+    {
+        padding: 5px 35px;
+        background-color: yellow;
+        color: #222;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+
+    .clear
+    {
+        padding: 5px 35px;
+        background-color: red;
+        color: #222;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.4s;
+        font-size: 12px;
+        border-radius: 15px;
+
+    }
+
+    .counter
+    {   
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .counter .quantity
+    {
+        font-size: 18px;
+        width: 2px;
+        padding: 2px;
+        position: relative;
+        right: 4px;
+    }
+
+    .counter i::before
+    {   
+        height: 3px;
+        width: 6px;
+    }
+
+    .close
+    {
+        font-size: 1rem;
+        position: relative;
+        left: 10px;
+    }
+
+    .img-container img
+    {   
+        height: 90px;
+        width: 90px;
+    }
+
+    .price
+    { 
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 auto;
+        color: #222;
+        max-width: 5px;
+    }
+
+.memo
+{
+    max-height: 230px;
+    max-width: 280px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:2rem;
+}
+
+.coupon
+{
+    display: flex;
+    flex-direction: column;
+    max-height: 120px;
+    max-width: 280px;
+    background-color: rgb(241, 241, 241);
+    padding: 15px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.coupon-title
+{
+    font-size: 1rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.coupon-input input
+{
+    max-height: 30px;
+    max-width: 160px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.coupon-button
+{
+    max-height: 30px;
+    max-width: 110px;
+    cursor: pointer;
+    background-color: rgb(167, 218, 65);
+    color: #fff;
+    border:none;
+    font-size: 13px;
+}
+
+.checkout
+{
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.total-items, .total-price
+{
+    color:#222;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+}
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    <link rel="stylesheet" href="/style.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="/Data.js" defer></script>
+    <script src="/main.js" defer></script>
+    <title>Ecommerce App</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="nav-title">Lara</a>
+        </div>
+        <div class="nav-menu">
+                <ul class="nav-ul">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/products/products.html">Products</a></li>
+                    <li><a href="/purchase/purchase.html">Purchase</a></li>
+                    <li><a href="/register/register.html">Register</a></li>
+                </ul>
+        </div>
+        <a href="/cart/cart.html" class="cart">
+            <i class="bi bi-cart4"></i>
+            <div id="cart-amount" class="cart-amount">0</div>
+        </a>
+        <div class="hamburger"><div class="hamburger-icon"></div></div>
+    </div>
+
+    <section class="home section-padding">
+        <div class="home-title">
+            <button class="buy"><a href="/products/products.html">Buy Now!</a></button>
+            <h4>Upto 70% Discount</h4>
+            <h2>Super Sale On All Products</h2>
+            <p>Save more with coupons</p>
+        </div>
+    </section>
+
+    <section class="feature section-padding">   
+        <div class="feature-box">
+            <img src="/images/img/features/shipping.png" alt="shipping"> 
+            <h6>Fast Delivery</h6>
+        </div>
+        <div class="feature-box">
+            <img src="/images/img/features/online.png" alt="online"> 
+            <h6>Buy Online</h6>
+        </div>
+        <div class="feature-box">
+            <img src="/images/img/features/money saving.png" alt="saving"> 
+            <h6>Save Money</h6>
+        </div>
+        <div class="feature-box">
+            <img src="/images/img/features/24  7.png" alt="24 / 7"> 
+            <h6>24 / 7 Availability</h6>
+        </div>
+    </section>
+
+    <section class="product section-padding" >
+            <div class="product-title">
+                <h2>Winter Sale 2022</h2>
+                <hr>
+            </div> 
+            <div class="products" id="products">
+            </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <h4>Available Services</h4>
+            <h2>Upto <span class="title">70% off</span> on all shirts and accessories</h2>
+            <button class="button1">Explore More</button>
+        </div>
+    </section>
+
+    <section class="ad section-padding">
+        <div class="box ad-box1">
+            <div class="box1-title">            
+                <h2>Find Best Deals</h2>
+                <h4>Buy 1 Get 1 Free!</h4>
+                <span>Best classic dress in the cart</span>
+                <div class="button2">Learn More</div>
+            </div>
+        </div>
+        <div class="box ad-box2">
+            <div class="box2-title">
+                <h2>See Winter Deals</h2>
+                <h4>Buy Today!</h4>
+                <span>Get voucher discount</span>
+                <div class="button2">Learn More</div>
+            </div>
+        </div>
+        <div class="box ad-box3">
+            <div class="box3-title">
+                <h2>Upcoming Season</h2>
+                <h4>Winter/ Spring</h4>
+                <span>New Arrival Soon</span>
+            </div>
+
+        </div>
+        <div class="box ad-box4">
+            <div class="box4-title">
+                <h2>Seasonal Sale</h2>
+                <h4>Winter Collection - 70% Off</h4>
+                <span></span>
+                <div class="button2">Explore</div>
+            </div>
+
+        </div>
+        <div class="box ad-box5">
+            <div class="box5-title">
+                <h2>New Footwear Collection</h2>
+                <h4>Spring / Summer 2022</h4>
+                <span>The best classic dress at <span class="lara">Lara</span></span>
+            </div>
+
+        </div>
+        <div class="box ad-box6">
+            <div class="box6-title">
+                <h2>T-Shirts Collection</h2>
+                <h4>New Trendy Ponts</h4>
+                <span>also with discount</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-img">
+            <h2>Get Updates</h2>
+            <h3>Sign Up to get latest updates on our <span class="special">special offers</span></h3>
+            <form class="sign-up">
+                <input type="text" name="sign" placeholder="Enter Your Email">
+                <button class="sign">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="col1">
+            <div class="footer-logo">
+                Lara
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p><span class="contact2">Address</span> : 540 New Hamsphere, Lakeshore</p>
+                <p><span class="contact2">Phone</span> : +01 2222 543 (+91) 013345 6779</p>
+                <p><span class="contact2">Hours</span> : 10.00 - 18.00. Mon - Sat</p>
+            </div>
+            <p class="social-title">Follow Us</p>
+            <div class="social">
+                <i class="bi bi-facebook facebook"></i>
+                <i class="bi bi-twitter twitter"></i>
+                <i class="bi bi-instagram instagram"></i>
+                <i class="bi bi-linkedin linkedin"></i>            
+            </div>
+        </div>
+        <div class="col2">
+            <h3>About</h3>
+            <a href="about.html">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="/contact/contact.html">Contact Us</a>
+        </div>
+        <div class="col3">
+            <h3>My Account</h3>
+            <a href="/register/register.html" class="form-sign">Sign Up</a>
+            <a href="/cart/cart.html">View Cart</a>
+        </div>
+        <div class="col4">
+            <h3>Install App</h3>
+            <p>From App Store or Google Play</p>
+            <div class="purchase-img">
+                <div class="google"></div>
+                <div class="apple"></div>
+            </div>
+            <div class="payment">
+                <p>Secured payment options</p>
+                <div class="payment-box">
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/visa.png" alt=""></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/american.png" alt="american"></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/mastercard.png" alt="mastercard"></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/maestro.png" alt="maestro"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright"><p>©2022 e-commerce website</p></div>
+    
+</body>
+
+</html>

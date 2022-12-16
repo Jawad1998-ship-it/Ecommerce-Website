@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    <link rel="stylesheet" href="/style.css" defer>
+    <link rel="stylesheet" href="/purchase/style.css" defer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="/purchase/purchase.js" defer></script>
+    <title>Purchase with Card</title>
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html" class="nav-title">Lara</a>
+        </div>
+        <div class="nav-menu">
+                <ul class="nav-ul">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/products/products.html">Products</a></li>
+                    <li><a href="/purchase/purchase.html">Purchase</a></li>
+                    <li><a href="/register/register.html">Register</a></li>
+                </ul>
+        </div>
+        <a href="/cart/cart.html" class="cart">
+            <i class="bi bi-cart4"></i>
+            <div id="cart-amount" class="cart-amount">0</div>
+        </a>
+        <div class="hamburger"><div class="hamburger-icon"></div></div>
+    </div>
+
+    <div class="purchase-container">
+        <form action="" class="purchase-form">
+            <div class="row-purchase">
+
+                <div class="col-purchase">
+                    <h3 class="purchase-title">Billing Address</h3>
+                    <div class=col-input>
+                        <p>Full Name</p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>Email : </p>
+                        <input type="email" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>Address : </p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>City : </p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>State : </p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>Zip Code</p>
+                        <input type="text" class="input1">
+                    </div>
+                </div>      
+
+                <div class="col-purchase">
+                    <h3 class="purchase-title">Payment</h3>
+                    <div class="col-input payment-section">
+                        <label>
+                            <input type="radio" name="pay" style="cursor: pointer;"><img src="/images/img/pay/visa.png" alt="visa">
+                        </label>
+                        <label>
+                            <input type="radio" name="pay" style="cursor: pointer;"><img src="/images/img/pay/american-express-logo.png" alt="american">
+                        </label>
+                        <label>
+                            <input type="radio" name="pay" style="cursor: pointer;"><img src="/images/img/pay/mastercard.png" alt="mastercard">
+                        </label>
+                        <label>
+                            <input type="radio" name="pay" style="cursor: pointer;"><img src="/images/img/pay/maestro.png" alt="maestro">
+                        </label>
+                    </div>
+                    <div class=col-input>
+                        <p>Cards Acted :</p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>Name on card :</p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>Credit Card Number : </p>
+                        <input type="text" class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>Exp Date : </p>
+                        <input type="text" placeholder="2022"  class="input1">
+                    </div>
+                    <div class=col-input>
+                        <p>CVV :  </p>                     
+                        <input type="text"  class="input1">
+                    </div>
+                </div>   
+                    
+            </div>
+
+        </form>
+        <input type="submit" value="Proceed to Checkout" class="submit-btn">
+    </div>
+
+    <footer class="footer">
+        <div class="col1">
+            <div class="footer-logo">
+                Lara
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p><span class="contact2">Address</span> : 540 New Hamsphere, Lakeshore</p>
+                <p><span class="contact2">Phone</span> : +01 2222 543 (+91) 013345 6779</p>
+                <p><span class="contact2">Hours</span> : 10.00 - 18.00. Mon - Sat</p>
+            </div>
+            <p class="social-title">Follow Us</p>
+            <div class="social">
+                <i class="bi bi-facebook facebook"></i>
+                <i class="bi bi-twitter twitter"></i>
+                <i class="bi bi-instagram instagram"></i>
+                <i class="bi bi-linkedin linkedin"></i>            
+            </div>
+        </div>
+        <div class="col2">
+            <h3>About</h3>
+            <a href="about.html">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="/contact/contact.html">Contact Us</a>
+        </div>
+        <div class="col3">
+            <h3>My Account</h3>
+            <a href="/form/form.html" class="form-sign">Sign In</a>
+            <a href="/cart/cart.html">View Cart</a>
+        </div>
+        <div class="col4">
+            <h3>Install App</h3>
+            <p>From App Store or Google Play</p>
+            <div class="purchase-img">
+                <div class="google"></div>
+                <div class="apple"></div>
+            </div>
+            <div class="payment">
+                <p>Secured payment options</p>
+                <div class="payment-box">
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/visa.png" alt=""></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/american.png" alt="american"></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/mastercard.png" alt="mastercard"></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/maestro.png" alt="maestro"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright"><p>©2022 e-commerce website</p></div>
+
+</body>
+</html>

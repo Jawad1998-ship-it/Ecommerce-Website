@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    <link rel="stylesheet" href="/style.css">  
+    <link rel="stylesheet" href="/singleProduct/sproduct.css">
+    <link rel="stylesheet" href="/products/products.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="/products/allData.js" defer></script>
+    <script src="/singleProduct/sproduct.js" defer></script>
+    <title>Explore Product</title>
+</head>
+
+<body>
+    
+
+    <div class="navbar">
+            <div class="nav-logo">
+                <a href="/index.html" class="nav-title">Lara</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/products/products.html">Products</a></li>
+                    <li><a href="/purchase/purchase.html">Purchase</a></li>
+                    <li><a href="/register/register.html">Register</a></li>
+                </ul>
+            </div>
+            <a href="/cart/cart.html" class="cart">
+                <i class="bi bi-cart4"></i>
+                <div id="cart-amount" class="cart-amount">0</div>
+            </a>
+            <i class="bi bi-list hamburger"></i>
+    </div>
+
+    <section class="product-details" id="product-details">
+
+        <div class="left">
+            <div class="single-image">
+                <img src="/images/img/products/f3.jpg" class="mainImg" id="mainImg" alt="product">
+            </div>
+            <div class="small-images">
+                <div class="small-col1">
+                    <img src="/images/products/f1.jpg" class="small-img" alt="product">
+                </div>
+                <div class="small-col2">
+                    <img src="/images/products/f2.jpg" class="small-img" alt="product">
+                </div>
+                <div class="small-col3">
+                    <img src="/images/products/f3.jpg" class="small-img" alt="product">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="single-product-details">
+                <h6>Men's T-Shirt</h6>
+                <h4>Men's Fashion T-Shirt</h4>
+                <h3>40$</h3>
+            </div>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Large</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <button class="buy-2">Add to Cart</button>
+            <h4 class="single-details">Product Details</h4>
+            <span>
+                Lorem ipsum dolor sit, amet consectetur adipisicingquod reiciendis dicta id, nam eligendi facere in quo dolores possimus, aut, facilis labore quibusdam.
+            </span>
+        </div>
+
+    </section>
+        
+    <section class="all-products-container">
+
+        <div class="all-products-title">
+            <h2>Find Your Product</h2>
+            <h4>Explore Best of Winter Collection</h4>
+        </div>
+        <div class="all-products" id="all-products"></div>
+
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-img">
+            <h2>Get Updates</h2>
+            <h3>Sign Up to get latest updates on our <span class="special">special offers</span></h3>
+            <form class="sign-up">
+                <input type="text" name="sign" placeholder="Enter Your Email">
+                <button class="sign">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="col1">
+            <div class="footer-logo">
+                Lara
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p><span class="contact2">Address</span> : 540 New Hamsphere, Lakeshore</p>
+                <p><span class="contact2">Phone</span> : +01 2222 543 (+91) 013345 6779</p>
+                <p><span class="contact2">Hours</span> : 10.00 - 18.00. Mon - Sat</p>
+            </div>
+            <p class="social-title">Follow Us</p>
+            <div class="social">
+                <i class="bi bi-facebook facebook"></i>
+                <i class="bi bi-twitter twitter"></i>
+                <i class="bi bi-instagram instagram"></i>
+                <i class="bi bi-linkedin linkedin"></i>            
+            </div>
+        </div>
+        <div class="col2">
+            <h3>About</h3>
+            <a href="about.html">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="/contact/contact.html">Contact Us</a>
+        </div>
+        <div class="col3">
+            <h3>My Account</h3>
+            <a href="/form/form.html" class="form-sign">Sign In</a>
+            <a href="/cart/cart.html">View Cart</a>
+        </div>
+        <div class="col4">
+            <h3>Install App</h3>
+            <p>From App Store or Google Play</p>
+            <div class="purchase-img">
+                <div class="google"></div>
+                <div class="apple"></div>
+            </div>
+            <div class="payment">
+                <p>Secured payment options</p>
+                <div class="payment-box">
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/visa.png" alt=""></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/american.png" alt="american"></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/mastercard.png" alt="mastercard"></a>
+                    <a href="/purchase/purchase.html"><img src="/images/img/pay/maestro.png" alt="maestro"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright"><p>©2022 e-commerce website</p></div>
+
+
+</body>
+
+</html>
